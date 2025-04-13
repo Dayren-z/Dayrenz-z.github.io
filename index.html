@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="apple-touch-icon" href="icon-192.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <!-- Manifest para PWA -->
+    <link rel="manifest" href="manifest.json" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tareas con Voz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Lista de la Compra:</h1>
+
+    <div>
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Escribe una nueva tarea..."
+      />
+      <button id="addTaskButton">Agregar</button>
+      <button id="voiceButton">🎤 Agregar con Voz</button>
+      <div id="voiceStatus"></div>
+    </div>
+
+    <ul id="taskList"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
